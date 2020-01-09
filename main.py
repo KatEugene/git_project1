@@ -3,6 +3,7 @@ import random
 from UI import Ui_MainWindow
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPainter, QColor
+from PyQt5.QtCore import Qt
 
 
 class MyWidget(QMainWindow, Ui_MainWindow):
@@ -35,6 +36,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         qp.end()
 
     def drawFlag(self, qp):
+        qp.setPen(Qt.Yellow)
         for i in self.coordinates:
             qp.setBrush(QColor(i[3], i[4], i[5]))
             qp.drawEllipse(i[0], i[1], i[2], i[2])
