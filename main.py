@@ -3,7 +3,6 @@ import random
 from UI import Ui_MainWindow
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtGui import QPainter, QColor
-from PyQt5.QtCore import Qt
 
 
 class MyWidget(QMainWindow, Ui_MainWindow):
