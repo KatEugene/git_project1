@@ -36,7 +36,6 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         qp.end()
 
     def drawFlag(self, qp):
-        qp.setPen(Qt.Yellow)
         for i in self.coordinates:
             qp.setBrush(QColor(i[3], i[4], i[5]))
             qp.drawEllipse(i[0], i[1], i[2], i[2])
